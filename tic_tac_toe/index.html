@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div id="setup-area">
+            <h1>Tic Tac Toe</h1>
+            <div class="setup">
+                <label for="symbol">Choose your symbol:</label>
+                <select id="symbol">
+                    <option value="X">X</option>
+                    <option value="O">O</option>
+                </select>
+            </div>
+
+            <div class="setup">
+                <p>Do you want to go first?</p>
+                <label for="first">First</label>
+                <input type="radio" id="first" name="turn" value="first" checked>
+                <label for="second">Second</label>
+                <input type="radio" id="second" name="turn" value="second">
+            </div>
+
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <div id="game-area" style="display: none;">
+            <div id="game-board" class="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <button id="restart-button">Restart Game</button>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
